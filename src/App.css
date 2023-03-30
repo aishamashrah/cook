@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.rotate-10 {
+  transform: rotate(-10deg);
+}

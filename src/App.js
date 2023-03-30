@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
+import CookEaseHeader from './Components/Header/header';
+import CookEaseFooter from './Components/Footer/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+        <CookEaseHeader />
+        <div className='mt-10'></div>
+        <CookEaseFooter />
     </div>
   );
 }
