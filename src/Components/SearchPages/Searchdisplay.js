@@ -1,76 +1,14 @@
 import Searchpages from './Searchpages'
-
-
-
-
+import Searchbar from './searchbar'
+import img from '../../Assets/Images/Unknown.jpeg'
 export default function Display() {
     return (
         <>
+       
             <br></br>
             <br></br>
-
-            <div class=" gap-4 header p-5  border-black border mb-30  ">
-            <div class="grid grid-cols-12 sm:text-xs">
-    <div class="col-span-4 text-4xl font-lobster text-center sm:text-left md:mx- sm:mx-44">
-        Search
-    </div>
-    <label class="relative block col-span-8 mx-2 sm:mx-0 sm:col-span-4 sm:grid-cols-12">
-        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-            <svg class="z-0 w-5 h-5" viewBox="0 0 20 20"></svg>
-        </span>
-        <input class="placeholder:italicawq23a block bg-white md:w-96 sm:w-96 mx-10 rounded-md py-2 sm:pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search
-                    " />
-    </label>
-</div>
-                <div class="flex justify-center">
-                    <div class="text-left">
-                        <button type="button" class="inline-flex w-full justify-center sm:gap-x-1 rounded-md px-3 py-2 text-sm font-semibold text-gray-900  hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                            Search
-                            <svg class="-mr-1 h-5 w-5 text-black-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class=" inline-block text-left">
-                        <button type="button" class="inline-flex w-full justify-center  sm:gap-x-1 rounded-md px-3 py-2 text-sm font-semibold text-gray-900  hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                            Diets
-                            <svg class="-mr-1 h-5 w-5 text-black-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class=" inline-block text-left">
-                        <button type="button" class="inline-flex w-full justify-center sm:gap-x-1 rounded-md px-3 py-2 text-sm font-semibold text-gray-900   hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                            Tags
-                            <svg class="-mr-1 h-5 w-5 text-black-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                    </div>
-                    <div class="inline-block text-left">
-                        <button type="button" class="inline-flex w-full justify-center md:gap-x-1 sm:gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900  hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                            Region
-                            <svg class="-mr-1 h-5 w-5 text-black-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                    </div>
-                    <div class=" inline-block text-left">
-                        <button type="button" class="inline-flex w-full justify-center md:gap-x-1 sm:gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900  hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                            User
-                            <svg class="-mr-1 h-5 w-5 text-black-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-
-
+                   
+         <Searchbar/>
 
             <div class="mx-auto max-w-6xl  mt-10">
 
@@ -80,27 +18,27 @@ export default function Display() {
                       
                         ">
 
-                    <div> <Searchpages /></div>
-                    <div> <Searchpages /> </div>
-                    <div> <Searchpages /> </div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
                 </div>
                 <div class="grid  gap-8   mx-20
                         md:grid-cols-3 
                         lg:grid-cols-3  lg:mx-10
                         ">
 
-                    <div> <Searchpages /></div>
-                    <div> <Searchpages /> </div>
-                    <div> <Searchpages /> </div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
                 </div>
                 <div class="grid gap-8  mx-20
                         md:grid-cols-3 
-                        lg:grid-cols-3  lg:mx-10
+                      lg:mx-10
                         ">
 
-                    <div> <Searchpages /></div>
-                    <div> <Searchpages /> </div>
-                    <div> <Searchpages /> </div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
+                    <div> <Searchpages img={img} type={'Vegetarian'} text={'elementum. Maecenas scelerisque pellentesque consequat. Vestibulum aliquam, metus eu'} /></div>
                 </div>
 
             </div>
